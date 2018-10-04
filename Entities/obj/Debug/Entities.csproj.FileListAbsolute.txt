@@ -1,0 +1,5 @@
+D:\Anitha\LTCPro\LTCPro.Entities\bin\Debug\LTCPro.Entities.dll
+D:\Anitha\LTCPro\LTCPro.Entities\bin\Debug\LTCPro.Entities.pdb
+D:\Anitha\LTCPro\LTCPro.Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+D:\Anitha\LTCPro\LTCPro.Entities\obj\Debug\LTCPro.Entities.dll
+D:\Anitha\LTCPro\LTCPro.Entities\obj\Debug\LTCPro.Entities.pdb
