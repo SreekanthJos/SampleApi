@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "LTCPro.Repositories\Repositories.csproj", "{5C6A426E-4EBF-4CD6-A0E9-0AB0C1E2664A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{5C6A426E-4EBF-4CD6-A0E9-0AB0C1E2664A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "LTCPro.DAL\DAL.csproj", "{E3D08656-4592-40DC-8E93-8EEBB1B50947}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E3D08656-4592-40DC-8E93-8EEBB1B50947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "LTCPro.Entities\Entities.csproj", "{C9839F34-9A6C-4250-BF8C-4312C7E8E85F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{C9839F34-9A6C-4250-BF8C-4312C7E8E85F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "LTCPro.WebApi\WebApi.csproj", "{DA747899-DA90-40A5-A7E7-6E2DAED30E90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{DA747899-DA90-40A5-A7E7-6E2DAED30E90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
