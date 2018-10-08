@@ -21,7 +21,7 @@ namespace WebApi.Controllers
 
         public JsonResult<PatientEntity> Get()
         {
-            var patient = this._patientService.GetPatient();
+            var patient = this._patientService.GetPatient().Result;
             return Json<PatientEntity>(patient);
         }
     }

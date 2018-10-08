@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Dependencies;
 using System.Web.Http.ExceptionHandling;
 using System.Web.Http.Filters;
 
@@ -13,7 +14,7 @@ namespace WebApi.Filters
     public class CustomApiExceptionFilter : ExceptionFilterAttribute
     {
         private readonly ILogger _log;
-        public CustomApiExceptionFilter()//:this(DependencyResolver.Current.GetService<ILogger>())
+        public CustomApiExceptionFilter()//:this(System.Web.Mvc.DependencyResolver.Current.GetService<ILogger>())
         {
 
         }
@@ -56,17 +57,7 @@ namespace WebApi.Filters
 
                 };
             }
-            //Changing exception message to something generic.
-            // exceptionMessage = "An error occurred and logged during processing of this application.";
-        
-            //Throwing a proper message for the client side
-           // var message = new HttpResponseMessage(HttpStatusCode.InternalServerError)
-            //{
-            //    Content = new StringContent(exceptionMessage),
-            //    ReasonPhrase = exceptionMessage
-                
-            //};
-
+            
             throw new HttpResponseException(message);
         }
         private void WriteLog(Exception exception)

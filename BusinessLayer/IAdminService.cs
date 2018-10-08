@@ -9,7 +9,7 @@ namespace ServiceLayer
 {
     public interface IAdminService
     {
-        AdminEntity GetAdmin();
+        Task<AdminEntity> GetAdmin();
 
     }
 }

@@ -9,7 +9,7 @@ namespace ServiceLayer
 {
     public interface IPatientService
     {
-        PatientEntity GetPatient();
+        Task<PatientEntity> GetPatient();
 
     }
 }

@@ -21,9 +21,9 @@ namespace ServiceLayer
             this._patientRepository = patientRepository;
         }
 
-        public PatientEntity GetPatient()
+        public async Task<PatientEntity> GetPatient()
         {
-            return this._patientRepository.GetPatient();
+            return await Task.FromResult<PatientEntity>(this._patientRepository.GetPatient());
         }
     }
 }

@@ -9,7 +9,7 @@ namespace ServiceLayer
 {
     public interface IUserService
     {
-        UserEntity GetUser();
+        Task<UserEntity> GetUser();
 
     }
 }

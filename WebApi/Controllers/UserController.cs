@@ -11,7 +11,7 @@ using WebApi.Filters;
 
 namespace WebApi.Controllers
 {
-    [CustomApiExceptionFilter]
+    //[CustomApiExceptionFilter]
     public class UserController : ApiController
     {
         private readonly IUserService _userService;
@@ -24,7 +24,7 @@ namespace WebApi.Controllers
 
         public JsonResult<UserEntity> Get()
         {
-            var user = this._userService.GetUser();
+            var user = this._userService.GetUser().Result;
             return Json<UserEntity>(user);
         }
     }

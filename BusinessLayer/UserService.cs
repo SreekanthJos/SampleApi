@@ -21,9 +21,9 @@ namespace ServiceLayer
             this._userRepository = userRepository;
         }
 
-        public UserEntity GetUser()
+        public async Task<UserEntity> GetUser()
         {
-            return this._userRepository.GetUser();
+            return await Task.FromResult<UserEntity>(this._userRepository.GetUser());
         }
     }
 }

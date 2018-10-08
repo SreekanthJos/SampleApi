@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Http.Results;
 using Entities;
 using ServiceLayer;
+using System.Threading.Tasks;
 
 namespace WebApi.Controllers
 {
@@ -21,7 +22,7 @@ namespace WebApi.Controllers
 
         public JsonResult<AdminEntity> Get()
         {
-            var admin = this._adminService.GetAdmin();
+            var admin = this._adminService.GetAdmin().Result;
             return Json<AdminEntity>(admin);
         }
     }

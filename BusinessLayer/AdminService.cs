@@ -21,9 +21,9 @@ namespace ServiceLayer
             this._adminRepository = adminRepository;
         }
 
-        public AdminEntity GetAdmin()
+        public async Task<AdminEntity> GetAdmin()
         {
-            return this._adminRepository.GetAdmin();
+            return await Task.FromResult<AdminEntity>(this._adminRepository.GetAdmin());
         }
     }
 }
